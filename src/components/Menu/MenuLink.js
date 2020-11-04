@@ -2,14 +2,14 @@ import React from 'react';
 
 const MenuLink = ({children, isActive, changeActiveBtn, id}) => {
 
-   const styles={color:'white'};
+   const styles={textDecoration:'underline',
+                color:'white'};
 
     return (
     <button
         onClick={()=>changeActiveBtn(id)}
         style={isActive ? styles : null}>
-            {children},
-            {isActive ? `wskaźnik jest ${isActive}` : `wskaznik jest ${isActive}`}
+            {children}
     </button>
      );
 }
